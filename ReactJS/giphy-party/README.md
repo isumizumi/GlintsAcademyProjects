@@ -17,7 +17,7 @@ Your application should do the following:
 
 Here is an example of what the application might look like:
 
-![Demo](https://i.imgur.com/SnpM0sM.png)
+![Demo](Demo.png)
 
 ## How to run
 
