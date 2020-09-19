@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+<p align="center">
+<img align="center" src="api_giphy_header.gif" width="100%" alt="API Giphy logo"/>
+</p>
+
+# GIPHY API Documentation
 
 For this exercise we will be using the Giphy API! This will require you to use an API key and understand some of the documentation about the API, which you can see [here](https://github.com/Giphy/GiphyAPI).
 
