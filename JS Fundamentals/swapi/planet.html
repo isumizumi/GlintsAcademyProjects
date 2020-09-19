@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Planet Asing</title>
+</head>
+
+<body>
+    <p>
+        <form onsubmit="goSearch();return false;">
+            <input type="text" id="search" placeholder="Cari nama planet...">
+            <input type="button" value="Search" onclick="goSearch()">
+        </form>
+    </p>
+    <p>
+        <table style="border: 1px solid #dddddd; padding: 8px; border-collapse: collapse;">
+            <thead>
+                <tr style="font-weight: bold; background-color: #9e5c93; text-align: center">
+                    <td style="padding: 5px;">No.</td>
+                    <td style="padding: 5px;">Name</td>
+                    <td style="padding: 5px;">Diameter</td>
+                    <td style="padding: 5px;">Climate</td>
+                    <td style="padding: 5px;">Population</td>
+                </tr>
+            </thead>
+            <tbody id="doPrint"></tbody>
+        </table>
+    </p>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
