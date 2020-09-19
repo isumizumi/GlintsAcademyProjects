@@ -13,7 +13,7 @@ Your application should do the following:
 
 Here is an example of what the application might look like:
 
-![Demo](http://https://imgur.com/SnpM0sM)
+![Demo](https://i.imgur.com/SnpM0sM.png)
 
 ## How to run
 
