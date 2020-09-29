@@ -1,4 +1,4 @@
-#Tue Sep 29 11:02:20 WIB 2020
-base.0=/home/isumi/Documents/BinarAcademy/GA/Explore/ProjectBinarAcademy/i-muslim/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Tue Sep 29 19:41:45 WIB 2020
+base.0=/home/isumi/Documents/BinarAcademy/GA/Batch7/GlintsXBinarProjects/ReactNative/i-muslim/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

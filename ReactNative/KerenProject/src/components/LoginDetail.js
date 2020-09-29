@@ -80,6 +80,7 @@ export default class LoginDetail extends Component {
     }
 
     render() {
+        console.disableYellowBox = true
         return (
             <ScrollView>
                 <ImageBackground source={require('../img/Background1.jpg')} style={styles.background}>

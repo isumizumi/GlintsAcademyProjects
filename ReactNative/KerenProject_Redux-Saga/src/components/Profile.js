@@ -63,6 +63,7 @@ class Profile extends Component {
   };
 
   render() {
+    console.disableYellowBox = true
     console.log(this.props.user)
     return (
       <Container>

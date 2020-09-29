@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/isumi/Documents/BinarAcademy/GA/Explore/ProjectBinarAcademy/i-muslim/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/home/isumi/Documents/BinarAcademy/GA/Batch7/GlintsXBinarProjects/ReactNative/i-muslim/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/home/isumi/.gradle/caches/transforms-2/files-2.1/af93392ead8ac42ceac08cdade444dbe/res/values-v21/values-v21.xml",

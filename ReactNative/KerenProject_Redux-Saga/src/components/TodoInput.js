@@ -28,6 +28,8 @@ class TodoInput extends Component {
   };
 
   render() {
+    console.disableYellowBox = true
+    
     // console.log(this.props.addTodo)
     // const loopTodo = this.props.addTodo.map((val, index) => {
     //     return (

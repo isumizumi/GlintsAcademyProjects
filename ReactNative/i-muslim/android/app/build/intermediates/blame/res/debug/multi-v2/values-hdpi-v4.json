@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/isumi/Documents/BinarAcademy/GA/Explore/ProjectBinarAcademy/i-muslim/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "/home/isumi/Documents/BinarAcademy/GA/Batch7/GlintsXBinarProjects/ReactNative/i-muslim/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
                     "source": "/home/isumi/.gradle/caches/transforms-2/files-2.1/01f19d8a6790bcceaae6fdeeca140cd7/res/values-hdpi-v4/values-hdpi-v4.xml",

@@ -20,6 +20,7 @@ class Home extends Component {
   };
 
   render() {
+    console.disableYellowBox = true
     return (
       <ScrollView>
         <ImageBackground
