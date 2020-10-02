@@ -200,9 +200,9 @@ const mapDispatchToProps = dispatch => {
   return {
     // FetchToken is the name our created at this time
     FetchToken: token => {
-      console.log('Ini FetchToken', token);
+      console.log('Ini FetchToken di Register', token);
       dispatch(auth(token))
-      console.log('Ini dispatch', dispatch(auth(token)));
+      console.log('Ini dispatch auth di Register', dispatch(auth(token)));
     }
   };
 };

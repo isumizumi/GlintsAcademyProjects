@@ -7,10 +7,11 @@ import HomeScreen from './src/components/Home';
 import TodoInput from './src/components/TodoInput';
 import TodoList from './src/components/TodoList';
 import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/es/integration/react'
 
 //const store = createStore(IndexReducer);
-import configureStore from './store';
-const store = configureStore();
+import { configureStore, persistor } from './src/redux/store';
+const storing = configureStore();
 
 const RootStack = createStackNavigator(
   {
@@ -22,7 +23,7 @@ const RootStack = createStackNavigator(
     List: TodoList,
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Details',
     // headerMode: 'none'
   }
 );
@@ -32,8 +33,13 @@ const AppContainer = createAppContainer(RootStack);
 export default class App extends Component {
   render() {
     return (
-      <Provider store={store}>
+      <Provider store={storing}>
+        <PersistGate 
+          loading={null}
+          persistor={persistor}
+        >
         <AppContainer />
+        </PersistGate>
       </Provider>
     );
   }

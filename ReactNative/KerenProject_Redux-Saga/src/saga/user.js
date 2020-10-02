@@ -8,9 +8,9 @@ import { apiGetUser } from './api/apiUser'
 
 export function* getUserData(action) {
     try {
-        const { token } = action
-        const users = yield call(apiGetUser, token)
-        console.log(action)
+        const { payload } = action
+        const users = yield call(apiGetUser, payload)
+        console.log('Payload users di saga', action)
         yield put({ type : SHOW_USER_DATA, payload : users })
         yield put({ type: SUCCESS_USER_DATA, payload : 'Successfully get' })
     } catch (error) {

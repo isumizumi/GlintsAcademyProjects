@@ -16,7 +16,7 @@ export default (state = initialState, action) => {
         case REQUEST_USER_DATA :
             return {
                 ...state,
-                loading : true
+                loading : true,
             }
         case SHOW_USER_DATA :
             return {

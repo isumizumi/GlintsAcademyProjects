@@ -31,16 +31,20 @@ class Profile extends Component {
 
   componentDidMount() {
     this.getData();
-    console.log('auth redux', this.props.auth) 
+    // console.log('auth redux', this.props.auth) 
     // check first: position/property name's of auth data value using console.log
+    console.log('Props.auth.data nya di Profile', this.props.auth.data);
     this.props.getUserListData(this.props.auth.data)
+    console.log('Props getUserListData nya di Profile', this.props.getUserListData(this.props.auth.data));
   }
 
   getData = async () => {
     try {
-      const token = await AsyncStorage.getItem('@token');
+      const data = await AsyncStorage.getItem('@token');
       // await this.setState({ token:token})
-      console.log('This is token sayang', token);
+      // console.log('This is token sayang', data);
+      console.log('Props Auth dari mapStateToProps di Profile', this.props.auth)
+      console.log('Props User dari mapStateToProps di Profile', this.props.user)
     } catch (e) {
       console.log('No token provided');
     }
@@ -64,7 +68,8 @@ class Profile extends Component {
 
   render() {
     console.disableYellowBox = true
-    console.log(this.props.user)
+    console.log('State User di Profile', this.props.user)
+    console.log('Props.user.data.name di Profile', this.props.user.data.name);
     return (
       <Container>
         <Header style={{ backgroundColor: '#FDFDFD' }}>
@@ -144,7 +149,13 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => {
   return {
     // getUserListData is the name our created at this time
-    getUserListData : (token) => dispatch(getUser(token))
+    getUserListData : (data) => { 
+      // console.log('Ini data dari getUserListData di mapDispatchToProps', data);
+      dispatch(getUser(data))
+      // console.log('Ini data dispatch di mapDispatchToProps', dispatch(getUser(data)));
+      // console.log('Ini data getUser di dispatch-mapDispatchToProps', getUser(data));
+      // console.log('Ini data dari dispatch-getUser-mapDispatchToProps', data);
+    }
   }
 }
 

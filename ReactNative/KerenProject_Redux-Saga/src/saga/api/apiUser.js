@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const apiGetUser = (token) => {
-    console.log('Tokennya: ', token)
+    console.log('Tokennya di apiUser saga: ', token)
     let headers = {
         'Authorization': token
     }

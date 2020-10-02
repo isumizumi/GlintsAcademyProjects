@@ -16,6 +16,7 @@ import axios from 'axios';
 import * as authType from '../redux/type/AuthType';
 import { connect } from 'react-redux'
 import { auth } from '../redux/action/AuthAction';
+// import { getUser } from '../redux/action/UserAction';
 
 class LoginDetail extends Component {
   constructor(props) {
@@ -59,7 +60,7 @@ class LoginDetail extends Component {
           password
         })
       });
-      console.log(apiLogin.data.data);
+      console.log('Data dari LoginDetail', apiLogin.data.data);
 
       if (apiLogin.data.data.token) {
         this.props.FetchToken(apiLogin.data.data.token);
@@ -78,12 +79,12 @@ class LoginDetail extends Component {
     }
   }
 
-  // componentDidMount() {
-  //   console.log('auth redux', this.props.auth);
-  //   if (this.props.auth.data) {
-  //     this.props.navigation.navigate('Profile');
-  //   }
-  // }
+  componentDidMount() {
+    console.log('Auth redux', this.props.user.data);
+    // if (this.props.user.data) {
+    //   this.props.navigation.navigate('Profile');
+    // }
+  }
 
   render() {
     console.disableYellowBox = true
@@ -183,7 +184,8 @@ const styles = StyleSheet.create({
 });
 
 const mapStateToProps = state => ({
-  auth: state.auth
+  auth: state.auth,
+  user: state.user
 });
 
 const mapDispatchToProps = dispatch => {
@@ -193,4 +195,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect( mapStateToProps, mapDispatchToProps )(LoginDetail);
+export default connect(mapStateToProps, mapDispatchToProps)(LoginDetail);
